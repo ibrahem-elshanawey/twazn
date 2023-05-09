@@ -98,7 +98,7 @@ $(function () {
 /* ===========================
          slide-details 
    =========================== */
-   $(function () {
+$(function () {
     $("#slide-details").owlCarousel({
         rtl: true,
         loop: true,
@@ -171,66 +171,57 @@ $(function () {
 /* ===========================
          password 
    =========================== */
-$(document).ready(function() {
-    $('.toggle-password').click(function() {
-      $(this).toggleClass('show-password');
-      var input = $("#password");
-      if (input.attr('type') == 'password') {
-        input.attr('type', 'text');
-        $(this)
-        .find('[data-fa-i2svg]')
-        .toggleClass('fa-eye-slash')
-        .toggleClass('fa-eye');
-      } else {
-        input.attr('type', 'password');
-        $(this).find('[data-fa-i2svg]')
-        .toggleClass('fa-eye-slash')
-        .toggleClass('fa-eye');
-      }
+$(document).ready(function () {
+    $('.toggle-password').click(function () {
+        $(this).toggleClass('show-password');
+        var input = $("#password");
+        if (input.attr('type') == 'password') {
+            input.attr('type', 'text');
+            $(this)
+                .find('[data-fa-i2svg]')
+                .toggleClass('fa-eye-slash')
+                .toggleClass('fa-eye');
+        } else {
+            input.attr('type', 'password');
+            $(this).find('[data-fa-i2svg]')
+                .toggleClass('fa-eye-slash')
+                .toggleClass('fa-eye');
+        }
     });
-  });
-  /* ===========================
-         confiarmpassword 
-   =========================== */
-$(document).ready(function() {
-    $('.toggle-confiarmpassword').click(function() {
-      $(this).toggleClass('show-password');
-      var input = $("#confiarmpassword");
-      if (input.attr('type') == 'password') {
-        input.attr('type', 'text');
-        $(this)
-        .find('[data-fa-i2svg]')
-        .toggleClass('fa-eye-slash')
-        .toggleClass('fa-eye');
-      } else {
-        input.attr('type', 'password');
-        $(this).find('[data-fa-i2svg]')
-        .toggleClass('fa-eye-slash')
-        .toggleClass('fa-eye');
-      }
+});
+/* ===========================
+       confiarmpassword 
+ =========================== */
+$(document).ready(function () {
+    $('.toggle-confiarmpassword').click(function () {
+        $(this).toggleClass('show-password');
+        var input = $("#confiarmpassword");
+        if (input.attr('type') == 'password') {
+            input.attr('type', 'text');
+            $(this)
+                .find('[data-fa-i2svg]')
+                .toggleClass('fa-eye-slash')
+                .toggleClass('fa-eye');
+        } else {
+            input.attr('type', 'password');
+            $(this).find('[data-fa-i2svg]')
+                .toggleClass('fa-eye-slash')
+                .toggleClass('fa-eye');
+        }
     });
-  });
+});
 /* ===========================
          checkbox 
    =========================== */
-   $("input:checkbox").on('click', function () {
+$("input:checkbox").on('click', function () {
     var $box = $(this);
     if ($box.is(":checked")) {
-      var group = "input:checkbox[name='" + $box.attr("name") + "']";
-      $(group).prop("checked", false);
-      $box.prop("checked", true);
+        var group = "input:checkbox[name='" + $box.attr("name") + "']";
+        $(group).prop("checked", false);
+        $box.prop("checked", true);
     } else {
-      $box.prop("checked", false);
+        $box.prop("checked", false);
     }
-  });
+});
 
-  const numb = document.querySelector(".numb");
-  let counter = 0;
-  setInterval(()=>{
-  if(counter == 92){
-  clearInterval();
-  }else{
-  counter+=1;
-  numb.textContent = counter + "%";
-  }
-  }, 80);
+$(`.navbar-nav .nav-link[href="${hash}"]`).addClass('active');
