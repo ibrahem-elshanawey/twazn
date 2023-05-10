@@ -1,3 +1,29 @@
+/* ===========================
+      video 
+ =========================== */
+const play = document.getElementById('play');
+ const video = document.getElementById('testvideo');
+ const imag = document.getElementById('imag');
+ play.addEventListener('click', function () {
+   if (video.paused) {
+     video.play()
+     play.style.display = 'none';
+     video.setAttribute("controls", "controls")
+ 
+ 
+   } else {
+ 
+   }
+ 
+ })
+ video.addEventListener('pause', function () {
+   play.style.display = 'block';
+   video.removeAttribute('controls');
+ })
+ 
+ video.addEventListener('play', function () {
+   play.style.display = 'none';
+ })
 /*================================
             self
 ==================================*/
@@ -211,6 +237,27 @@ $(document).ready(function () {
     });
 });
 /* ===========================
+       toggle-password-new 
+ =========================== */
+$(document).ready(function () {
+    $('.toggle-password-new').click(function () {
+        $(this).toggleClass('show-password');
+        var input = $("#passwordnew");
+        if (input.attr('type') == 'password') {
+            input.attr('type', 'text');
+            $(this)
+                .find('[data-fa-i2svg]')
+                .toggleClass('fa-eye-slash')
+                .toggleClass('fa-eye');
+        } else {
+            input.attr('type', 'password');
+            $(this).find('[data-fa-i2svg]')
+                .toggleClass('fa-eye-slash')
+                .toggleClass('fa-eye');
+        }
+    });
+});
+/* ===========================
          checkbox 
    =========================== */
 $("input:checkbox").on('click', function () {
@@ -225,3 +272,6 @@ $("input:checkbox").on('click', function () {
 });
 
 $(`.navbar-nav .nav-link[href="${hash}"]`).addClass('active');
+
+
+ 

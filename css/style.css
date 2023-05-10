@@ -76,6 +76,10 @@ li {
     padding: 0;
 }
 
+svg:hover {
+    cursor: pointer;
+}
+
 /*================================
                nav
 ==================================*/
@@ -102,6 +106,12 @@ li {
     margin-left: 48px;
     margin-right: 80px !important;
 }
+@media(max-width:991px) {
+    .navbar-collapse {
+   overflow: auto;
+    }
+}
+
 
 .navbar-nav {
     padding-right: 0px;
@@ -622,22 +632,10 @@ li {
     padding-bottom: 50px;
 }
 
-@media (max-width: 600px) {
-    #video {
-        background-position: right bottom calc(0% + 39px), left top calc(0% + 14px);
-        background-size: 100px, 50px;
-    }
-}
-
-.img-one {
+.btn-video {
+    border: none;
+    background: none;
     position: absolute;
-    left: 0;
-    top: 14px;
-}
-
-.icon-video {
-    position: absolute;
-
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -647,6 +645,17 @@ li {
     -o-transform: translate(-50%, -50%);
     text-align: center;
 }
+
+@media (max-width: 600px) {
+    #video {
+        background-position: right bottom calc(0% + 39px), left top calc(0% + 14px);
+        background-size: 100px, 50px;
+    }
+}
+
+
+
+
 
 
 .img-video {
@@ -730,12 +739,17 @@ h2 {
 @media (max-width:620px) {
     .p-doz {
         right: 0;
-        margin-right: 85px;
+        margin-right: 47px;
+        font-size: 34px;
+    }
+
+    .p-doz br {
+        display: none;
     }
 
     .btn-doz {
         right: 0 !important;
-        margin-right: 85px;
+        margin-right: 47px;
     }
 }
 
@@ -922,7 +936,7 @@ h2 {
 
     .st-two {
         margin-left: 0;
-        right: -83px;
+        right: -70px;
     }
 
     .st-three {
@@ -2409,10 +2423,10 @@ h2 {
 }
 
 .inp-login {
-    border: 1px solid #79747E;
+    border: 1px solid #BDBDBD;
     border-radius: 20px;
-    padding: 0.75rem 1.25rem !important;
-    padding-bottom: 1rem !important;
+    padding: 0.5rem 1.25rem !important;
+    padding-bottom: 0.5rem !important;
 }
 
 .inp-login::placeholder {
@@ -2452,7 +2466,16 @@ input:focus {
 .conent-pass .toggle-password {
     display: inline-block;
     position: absolute;
-    top: 45px;
+    top: 38px;
+    margin-right: -49px;
+    background: none;
+    border: none;
+}
+
+.conent-pass .toggle-password-new {
+    display: inline-block;
+    position: absolute;
+    top: 38px;
     margin-right: -49px;
     background: none;
     border: none;
@@ -2461,7 +2484,7 @@ input:focus {
 .conent-pass .toggle-confiarmpassword {
     display: inline-block;
     position: absolute;
-    top: 45px;
+    top: 38px;
     margin-right: -49px;
     background: none;
     border: none;
