@@ -286,3 +286,32 @@ video.addEventListener('ended', function() {
   video.load();
   video.style.display = 'block';
 });
+
+/* ===========================
+      tabs 
+ =========================== */
+ function activateTab(tabId) {
+    // Remove the active class from all tabs
+    const tabs = document.querySelectorAll('.tabs li');
+    tabs.forEach(tab => tab.classList.remove('active'));
+  
+    // Add the active class to the clicked tab
+    const tab = document.querySelector(`.tabs li a[href='${tabId}']`);
+    tab.parentNode.classList.add('active');
+  
+    // Show the corresponding tab content
+    const target = tab.getAttribute('href');
+    const tabContent = document.querySelector(target);
+    const tabContents = document.querySelectorAll('.tab-pane');
+    tabContents.forEach(content => content.classList.remove('active'));
+    tabContent.classList.add('active');
+  }
+  
+  const tabLinks = document.querySelectorAll('.tabs li a');
+  tabLinks.forEach(link => {
+    link.addEventListener('click', function(event) {
+      const tabId = this.getAttribute('href');
+      activateTab(tabId);
+      event.preventDefault();
+    });
+  });

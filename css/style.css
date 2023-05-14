@@ -1568,7 +1568,19 @@ h2 {
 #say-about {
     margin-top: 20px;
 }
-
+.tab-pane {
+    display: none;
+  }
+  
+  .tab-pane.active {
+    display: block;
+  }
+.message {
+    font-family: 'Somar';
+    font-size: 30px;
+    color: #000000;
+    display: block;
+}
 #say-about .row {
     padding-top: 50px;
 }
