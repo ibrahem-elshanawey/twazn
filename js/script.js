@@ -278,3 +278,11 @@ video.addEventListener('pause', function () {
 video.addEventListener('play', function () {
     play.style.display = 'none';
 })
+var poster = document.querySelector('#testvideo').getAttribute('poster');
+
+video.addEventListener('ended', function() {
+  video.style.display = 'none';
+  video.setAttribute('poster', poster);
+  video.load();
+  video.style.display = 'block';
+});
