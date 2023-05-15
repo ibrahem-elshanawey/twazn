@@ -1568,13 +1568,10 @@ h2 {
 #say-about {
     margin-top: 20px;
 }
-.tab-pane {
-    display: none;
-  }
-  
-  .tab-pane.active {
-    display: block;
-  }
+.nav-pills button {
+    border: none;
+}
+
 .message {
     font-family: 'Somar';
     font-size: 30px;
@@ -1600,7 +1597,7 @@ h2 {
     left: 6px;
     top: -47px;
     position: absolute;
-
+    width: 116px;
 }
 
 .text-say {

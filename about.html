@@ -63,25 +63,28 @@
                                 حسابي <i class="fa-solid fa-chevron-down"></i>
                             </button>
                             <ul class="dropdown-menu special-drop">
-                                <li><a class="dropdown-item dropdown-item-nav" href="datamod.html"><span class="item-nav"><img src="img/User.png" alt="">
+                                <li><a class="dropdown-item dropdown-item-nav" href="datamod.html"><span
+                                            class="item-nav"><img src="img/User.png" alt="">
                                             تعديل بياناتي</span>
                                         <span><i class="fa-solid fa-chevron-left"></i></span></a></li>
-                                <li><a class="dropdown-item dropdown-item-nav" href="requests.html"><span class="item-nav"><img src="img/card.png" alt="">
+                                <li><a class="dropdown-item dropdown-item-nav" href="requests.html"><span
+                                            class="item-nav"><img src="img/card.png" alt="">
                                             طلباتي</span>
                                         <span><i class="fa-solid fa-chevron-left"></i></span></a></li>
-                                <li><a class="dropdown-item dropdown-item-nav" href="controlboard.html"><span class="item-nav"><img
-                                                src="img/mdi_file-chart.svg" alt=""> لوحه التحكم</span>
+                                <li><a class="dropdown-item dropdown-item-nav" href="controlboard.html"><span
+                                            class="item-nav"><img src="img/mdi_file-chart.svg" alt=""> لوحه
+                                            التحكم</span>
                                         <span><i class="fa-solid fa-chevron-left"></i></span></a></li>
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                          </li>
-                                <li><a class="dropdown-item dropdown-item-nav special-item" href="#"><span class="item-nav"><img src="img/Logout.png"
-                                                alt="">  تسجيل خروج</span>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item dropdown-item-nav special-item" href="#"><span
+                                            class="item-nav"><img src="img/Logout.png" alt=""> تسجيل خروج</span>
                                     </a></li>
                             </ul>
                         </div>
                     </div>
-                  
+
                 </div>
             </div>
         </nav>
@@ -130,10 +133,11 @@
                 <div class=" img-video">
                     <div class=" img-video">
                         <video id="testvideo" class="revideo" poster="img/Rectangle 8964.png">
-                          <source src="video/34857563_W8vAc8G8.mp4" type="video/mp4">
+                            <source src="video/34857563_W8vAc8G8.mp4" type="video/mp4">
                         </video>
-                        <button type="button" id="play" class="btn-video"><img src="img/Video Icon (1).png" alt="" class="img-fluid"></button>
-                      </div>
+                        <button type="button" id="play" class="btn-video"><img src="img/Video Icon (1).png" alt=""
+                                class="img-fluid"></button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -142,69 +146,94 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-12">
                         <div class="btn-parent">
-                            <ul class="tabs">
-                                <li> <a href="#tab1" class="btn-about hvr-sweep-to-right active" ><img src="img/3.svg" alt=""
-                                    class="img-fluid"> دوزن حياتك
-                                الآن</a></li>
-                                <li> <a href="#tab2" class="btn-about hvr-sweep-to-right"><img src="img/1.svg" alt=""
-                                    class="img-fluid"> الرسالة
-                                والاهداف</a></li>
+                            <ul class="nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <li> <button class="btn-about hvr-sweep-to-right active" id="v-pills-home-tab"
+                                        data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab"
+                                        aria-controls="v-pills-home" aria-selected="true"><img src="img/3.svg" alt=""
+                                            class="img-fluid"> دوزن حياتك
+                                        الآن</button></li>
+                                <li> <button href="#tab2" class="btn-about hvr-sweep-to-right" id="v-pills-profile-tab"
+                                        data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab"
+                                        aria-controls="v-pills-profile" aria-selected="false"><img src="img/1.svg"
+                                            alt="" class="img-fluid"> الرسالة
+                                        والاهداف</button></li>
                                 <li>
-                                    <a href="#tab3" class="btn-about hvr-sweep-to-right"><img src="img/mdi_file-chart.svg" alt=""
-                                        class="img-fluid pe-3 ps-2"> مميزات دوزنها
-                                </a>
+                                    <button href="#tab3" class="btn-about hvr-sweep-to-right" id="v-pills-messages-tab"
+                                        data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button"
+                                        role="tab" aria-controls="v-pills-messages" aria-selected="false"><img
+                                            src="img/mdi_file-chart.svg" alt="" class="img-fluid pe-3 ps-2"> مميزات
+                                        دوزنها
+                                    </button>
                                 </li>
                             </ul>
-                           
-                           
-                           
+
+
+
                         </div>
 
                     </div>
                     <div class="col-lg-8 col-md-12">
-                        <div class="tab-content">
-                            <p class="p-about-2 tab-pane active" id="tab1">تأسست منصة توازن على أيدي مجموعة من الخبراء تحت أشراف الدكتور فيصل عوض
-                                بارويس المهتم بقياس أنماط الحياة الصحية وبرامج العافية ومسؤول الاتصال الدولي بالمعهد الوطني
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <p class="p-about-2 tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">تأسست منصة توازن على أيدي مجموعة من الخبراء
+                                تحت أشراف الدكتور فيصل عوض
+                                بارويس المهتم بقياس أنماط الحياة الصحية وبرامج العافية ومسؤول الاتصال الدولي بالمعهد
+                                الوطني
                                 للعافية بأستراليا. والدكتور خالد طلال أبو الشامات المتخصص في الصحة العامة والمهتم بتطوير
-                                الكوادر الصحية باستخدام برامج التنمية الذاتية. بناء على الخبرة الطويلة لهم في دولة أستراليا
-                                اعتمدت منصة توازن على تطبيق القياسات المستخدمة للعافية وأبعادها المختلفة لدى المعهد الوطني
+                                الكوادر الصحية باستخدام برامج التنمية الذاتية. بناء على الخبرة الطويلة لهم في دولة
+                                أستراليا
+                                اعتمدت منصة توازن على تطبيق القياسات المستخدمة للعافية وأبعادها المختلفة لدى المعهد
+                                الوطني
                                 للعافية بأستراليا مع موائمة وتغير بعض الأبعاد والمقاييس لكي تناسب مع المجتمع السعودي
                                 والعربي.</p>
 
-                                <p class="p-about-2 tab-pane" id="tab2">
-                                    <span class="message">الرسالة</span>
-                                    تأسست منصة توازن على أيدي مجموعة من الخبراء تحت أشراف الدكتور فيصل عوض
-                                    بارويس المهتم بقياس أنماط الحياة الصحية وبرامج العافية ومسؤول الاتصال الدولي بالمعهد الوطني
-                                    للعافية بأستراليا. والدكتور خالد طلال أبو الشامات المتخصص في الصحة العامة والمهتم بتطوير
-                                    الكوادر الصحية باستخدام برامج التنمية الذاتية. بناء على الخبرة الطويلة لهم في دولة أستراليا
-                                    اعتمدت منصة توازن على تطبيق القياسات المستخدمة للعافية وأبعادها المختلفة لدى المعهد الوطني
-                                    للعافية بأستراليا مع موائمة وتغير بعض الأبعاد والمقاييس لكي تناسب مع المجتمع السعودي
-                                    <span class="message">الاهداف</span>
-                                   1- بارويس المهتم بقياس أنماط الحياة الصحية وبرامج العافية ومسؤول الاتصال الدولي بالمعهد الوطني
-                                    للعافية بأستراليا. والدكتور خالد طلال أبو الشامات المتخصص في الصحة العامة والمهتم بتطوير
-                                    الكوادر الصحية باستخدام برامج التنمية الذاتية. بناء على الخبرة الطوي</p>
+                            <p class="p-about-2 tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+                                <span class="message">الرسالة</span>
+                                تأسست منصة توازن على أيدي مجموعة من الخبراء تحت أشراف الدكتور فيصل عوض
+                                بارويس المهتم بقياس أنماط الحياة الصحية وبرامج العافية ومسؤول الاتصال الدولي بالمعهد
+                                الوطني
+                                للعافية بأستراليا. والدكتور خالد طلال أبو الشامات المتخصص في الصحة العامة والمهتم بتطوير
+                                الكوادر الصحية باستخدام برامج التنمية الذاتية. بناء على الخبرة الطويلة لهم في دولة
+                                أستراليا
+                                اعتمدت منصة توازن على تطبيق القياسات المستخدمة للعافية وأبعادها المختلفة لدى المعهد
+                                الوطني
+                                للعافية بأستراليا مع موائمة وتغير بعض الأبعاد والمقاييس لكي تناسب مع المجتمع السعودي
+                                <span class="message">الاهداف</span>
+                                1- بارويس المهتم بقياس أنماط الحياة الصحية وبرامج العافية ومسؤول الاتصال الدولي بالمعهد
+                                الوطني
+                                للعافية بأستراليا. والدكتور خالد طلال أبو الشامات المتخصص في الصحة العامة والمهتم بتطوير
+                                الكوادر الصحية باستخدام برامج التنمية الذاتية. بناء على الخبرة الطوي
+                            </p>
 
-                                    <p class="p-about-2 tab-pane" id="tab3">تأسست منصة توازن على أيدي مجموعة من الخبراء تحت أشراف الدكتور فيصل عوض
-                                        بارويس المهتم بقياس أنماط الحياة الصحية وبرامج العافية ومسؤول الاتصال الدولي بالمعهد الوطني
-                                        للعافية بأستراليا. والدكتور خالد طلال أبو الشامات المتخصص في الصحة العامة والمهتم بتطوير
-                                        الكوادر الصحية باستخدام برامج التنمية الذاتية. بناء على الخبرة الطويلة لهم في دولة أستراليا
-                                        اعتمدت منصة توازن على تطبيق القياسات المستخدمة للعافية وأبعادها المختلفة لدى المعهد الوطني
-                                        للعافية بأستراليا مع موائمة وتغير بعض الأبعاد والمقاييس لكي تناسب مع المجتمع السعودي
-                                        والعربي. عوض
-                                        بارويس المهتم بقياس أنماط الحياة الصحية وبرامج العافية ومسؤول الاتصال الدولي بالمعهد الوطني
-                                        للعافية بأستراليا. والدكتور خالد طلال أبو الشامات المتخصص في الصحة العامة والمهتم بتطوير
-                                        الكوادر الصحية باستخدام برامج التنمية الذاتية. بناء على الخبرة الطوي
-                                        بارويس المهتم بقياس أنماط الحياة الصحية وبرامج العافية ومسؤول الاتصال الدولي بالمعهد الوطني
-                                        للعافية بأستراليا. والدكتور خالد طلال أبو الشامات المتخصص في الصحة العامة والمهتم بتطوير
-                                        الكوادر الصحية باستخدام برامج التنمية الذاتية. بناء على الخبرة الطويلة لهم في دولة أستراليا
-                                        اعتمدت منصة توازن على تطبيق القياسات المستخدمة للعافية وأبعادها المختلفة لدى المعهد الوطني
-                                        للعافية بأستراليا مع موائمة وتغير بعض الأبعاد والمقاييس لكي تناسب مع المجتمع السعودي
-                                        والعربي. عوض
-                                        بارويس المهتم بقياس أنماط الحياة الصحية وبرامج العافية ومسؤول الاتصال الدولي بالمعهد الوطني
-                                        للعافية بأستراليا. والدكتور خالد طلال أبو الشامات المتخصص في الصحة العامة والمهتم بتطوير
-                                        الكوادر الصحية باستخدام برامج التنمية الذاتية. بناء على الخبرة الطو</p>
+                            <p class="p-about-2 tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">تأسست منصة توازن على أيدي مجموعة من الخبراء تحت
+                                أشراف الدكتور فيصل عوض
+                                بارويس المهتم بقياس أنماط الحياة الصحية وبرامج العافية ومسؤول الاتصال الدولي بالمعهد
+                                الوطني
+                                للعافية بأستراليا. والدكتور خالد طلال أبو الشامات المتخصص في الصحة العامة والمهتم بتطوير
+                                الكوادر الصحية باستخدام برامج التنمية الذاتية. بناء على الخبرة الطويلة لهم في دولة
+                                أستراليا
+                                اعتمدت منصة توازن على تطبيق القياسات المستخدمة للعافية وأبعادها المختلفة لدى المعهد
+                                الوطني
+                                للعافية بأستراليا مع موائمة وتغير بعض الأبعاد والمقاييس لكي تناسب مع المجتمع السعودي
+                                والعربي. عوض
+                                بارويس المهتم بقياس أنماط الحياة الصحية وبرامج العافية ومسؤول الاتصال الدولي بالمعهد
+                                الوطني
+                                للعافية بأستراليا. والدكتور خالد طلال أبو الشامات المتخصص في الصحة العامة والمهتم بتطوير
+                                الكوادر الصحية باستخدام برامج التنمية الذاتية. بناء على الخبرة الطوي
+                                بارويس المهتم بقياس أنماط الحياة الصحية وبرامج العافية ومسؤول الاتصال الدولي بالمعهد
+                                الوطني
+                                للعافية بأستراليا. والدكتور خالد طلال أبو الشامات المتخصص في الصحة العامة والمهتم بتطوير
+                                الكوادر الصحية باستخدام برامج التنمية الذاتية. بناء على الخبرة الطويلة لهم في دولة
+                                أستراليا
+                                اعتمدت منصة توازن على تطبيق القياسات المستخدمة للعافية وأبعادها المختلفة لدى المعهد
+                                الوطني
+                                للعافية بأستراليا مع موائمة وتغير بعض الأبعاد والمقاييس لكي تناسب مع المجتمع السعودي
+                                والعربي. عوض
+                                بارويس المهتم بقياس أنماط الحياة الصحية وبرامج العافية ومسؤول الاتصال الدولي بالمعهد
+                                الوطني
+                                للعافية بأستراليا. والدكتور خالد طلال أبو الشامات المتخصص في الصحة العامة والمهتم بتطوير
+                                الكوادر الصحية باستخدام برامج التنمية الذاتية. بناء على الخبرة الطو</p>
                         </div>
-                       
+
                     </div>
                 </div>
             </div>
