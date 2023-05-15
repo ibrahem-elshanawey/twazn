@@ -305,6 +305,10 @@ svg:hover {
     display: flex;
 }
 
+.skip:hover {
+    color: #2EAC6D;
+}
+
 .skip .icon-self {
     width: 71px;
     height: 71px;
@@ -373,7 +377,10 @@ svg:hover {
     margin-top: 15px;
     position: relative;
 }
-
+.photo img {
+    max-height:546px;
+    max-width: 400px;
+}
 .bg-slide {
     background: linear-gradient(180deg, #2EAC6D 0%, rgba(255, 203, 60, 0.35) 50%), url("../img/Rectangle\ 8979.png") no-repeat;
     background-size: cover;
@@ -464,6 +471,10 @@ svg:hover {
     align-items: center;
     margin-right: 30px;
     margin-bottom: 16px;
+}
+
+.skip-2:hover {
+    color: #ffffff;
 }
 
 .skip-2 .icon-self-2 {
@@ -1287,7 +1298,7 @@ h2 {
 }
 
 #team-members .owl-nav {
-    display: block;
+    display: none;
     position: absolute;
     top: -78px;
     left: 0;
@@ -1568,6 +1579,7 @@ h2 {
 #say-about {
     margin-top: 20px;
 }
+
 .nav-pills button {
     border: none;
 }
@@ -1578,6 +1590,7 @@ h2 {
     color: #000000;
     display: block;
 }
+
 #say-about .row {
     padding-top: 50px;
 }
@@ -1597,7 +1610,7 @@ h2 {
     left: 6px;
     top: -47px;
     position: absolute;
-    width: 116px;
+    width: 122px;
 }
 
 .text-say {
@@ -4213,9 +4226,11 @@ input:focus {
     align-items: center;
     justify-content: center;
 }
+
 .btn-sutab:hover {
     color: #E7B836;
 }
+
 @media (max-width:638px) {
     .dashboard {
         background-position: right bottom, right bottom 74px;
