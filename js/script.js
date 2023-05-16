@@ -280,13 +280,44 @@ video.addEventListener('play', function () {
 })
 var poster = document.querySelector('#testvideo').getAttribute('poster');
 
-video.addEventListener('ended', function() {
-  video.style.display = 'none';
-  video.setAttribute('poster', poster);
-  video.load();
-  video.style.display = 'block';
+video.addEventListener('ended', function () {
+    video.style.display = 'none';
+    video.setAttribute('poster', poster);
+    video.load();
+    video.style.display = 'block';
 });
 
 /* ===========================
-      tabs 
+      container 
  =========================== */
+var myDiv = document.getElementById('slide-self');
+var dozen = document.getElementById('dozen');
+var ready = document.getElementById('ready');
+var why = document.getElementById('why');
+var team = document.getElementById('team');
+var say = document.getElementById('say');
+var vido = document.getElementById('video');
+
+function setContainerClass() {
+    if (window.matchMedia("(min-width: 1600px)").matches) {
+        myDiv.classList.add('container');
+        dozen.classList.add('container');
+        ready.classList.add('container');
+        why.classList.add('container');
+        team.classList.add('container');
+        say.classList.add('container');
+        vido.classList.add('container');
+    }
+    else {
+        myDiv.classList.remove('container');
+        dozen.classList.remove('container');
+        ready.classList.remove('container');
+        why.classList.remove('container');
+        team.classList.remove('container');
+        say.classList.remove('container');
+        vido.classList.remove('container');
+    }
+}
+
+setContainerClass();
+window.addEventListener("resize", setContainerClass);

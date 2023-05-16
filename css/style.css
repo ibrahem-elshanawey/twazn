@@ -735,6 +735,28 @@ svg:hover {
 
 }
 
+@media(min-width:1600px) {
+    .st-two {
+        margin-left: 0px !important;
+    }
+
+    .btn-doz-2 {
+        left: 0px !important;
+    }
+
+    .my-section {
+        width: 100%;
+        max-width: 1320px;
+        padding-right: var(--bs-gutter-x, .75rem);
+        padding-left: var(--bs-gutter-x, .75rem);
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+    .parent-request {
+        padding-left: 0px !important;
+    }
+}
+
 @media (max-width:441px) {
     .head-doz {
         width: auto;
@@ -3746,12 +3768,14 @@ input:focus {
     align-items: center;
     margin-top: 30px;
 }
+
 @media(max-width:430px) {
     .cont-form {
         padding-left: 10px;
         padding-right: 10px;
     }
 }
+
 .icon-contact {
     display: flex;
     justify-content: center;
