@@ -279,7 +279,7 @@ svg:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 14px 21px;
+    padding: 10px 21px;
     margin-top: 90px;
     background: linear-gradient(180deg, #2EAC6D 0%, #52EA9E 100%);
     border: 2px solid #2EAC6D;
@@ -441,7 +441,7 @@ svg:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 14px 21px;
+    padding: 10px 21px;
     gap: 7.6px;
     width: 200px;
     height: 70px;
@@ -544,7 +544,7 @@ svg:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 14px 21px;
+    padding: 10px 21px;
     width: 200px;
     height: 70.35px;
     background: linear-gradient(180deg, #FFCB3C 0%, #FFD665 100%);
