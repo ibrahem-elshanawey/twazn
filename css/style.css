@@ -163,15 +163,15 @@ svg:hover {
     font-family: 'Somar';
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 29px;
     color: #FFFFFF;
-    padding: 14px 43px;
+    padding: 10px 40px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    max-width: 201px;
+    max-width: 190px;
     transition: all 0.3s linear;
     -webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
@@ -285,11 +285,11 @@ svg:hover {
     border: 2px solid #2EAC6D;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
-    width: 234px;
+    width: 200px;
     font-family: 'Somar';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 30px;
     line-height: 43px;
     color: #FFFFFF;
     text-align: center;
@@ -310,8 +310,8 @@ svg:hover {
 }
 
 .skip .icon-self {
-    width: 71px;
-    height: 71px;
+    width: 65px;
+    height: 65px;
     border: 4px solid #2EAC6D;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -443,7 +443,7 @@ svg:hover {
     align-items: center;
     padding: 14px 21px;
     gap: 7.6px;
-    width: 234px;
+    width: 200px;
     height: 70px;
     background: linear-gradient(180deg, #2EAC6D 0%, #52EA9E 100%);
     border: 2px solid #FFFFFF;
@@ -452,7 +452,7 @@ svg:hover {
     font-family: 'Somar';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 30px;
     line-height: 43px;
     color: #FFFFFF;
     margin-top: 67px;
@@ -481,8 +481,8 @@ svg:hover {
 }
 
 .skip-2 .icon-self-2 {
-    width: 71px;
-    height: 71px;
+    width: 65px;
+    height: 65px;
     border: 4px solid #ffffff;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -545,7 +545,7 @@ svg:hover {
     justify-content: center;
     align-items: center;
     padding: 14px 21px;
-    width: 234px;
+    width: 200px;
     height: 70.35px;
     background: linear-gradient(180deg, #FFCB3C 0%, #FFD665 100%);
     border: 2px solid #2EAC6D;
@@ -554,7 +554,7 @@ svg:hover {
     font-family: 'Somar';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 30px;
     line-height: 43px;
     color: #FFFFFF;
     margin-top: 51px;
@@ -730,7 +730,7 @@ svg:hover {
     border-width: 30px 0px 30px 30px;
     border-color: #FFFFFF;
     border-style: solid;
-    width: 425px;
+    width: 410px;
     filter: drop-shadow(0px 10px 15px rgba(1, 115, 153, 0.3));
 
 }
@@ -752,8 +752,14 @@ svg:hover {
         margin-right: auto !important;
         margin-left: auto !important;
     }
+
     .parent-request {
         padding-left: 0px !important;
+    }
+
+    .slid-2,
+    .slide-3 {
+        border-right: none !important;
     }
 }
 
@@ -773,7 +779,7 @@ h2 {
     font-family: 'Somar';
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 36px;
     line-height: 48px;
     color: #FFFFFF;
 }
@@ -785,7 +791,7 @@ h2 {
     font-family: 'Somar';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 33px;
     color: #2F4046;
 }
 
@@ -793,7 +799,7 @@ h2 {
     .p-doz {
         right: 0;
         margin-right: 47px;
-        font-size: 34px;
+        font-size: 33px;
     }
 
     .p-doz br {
@@ -816,7 +822,7 @@ h2 {
     font-family: 'Somar';
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 21px;
     line-height: 29px;
     right: 85px;
     border: 5px solid #2EAC6D;
@@ -930,7 +936,7 @@ h2 {
     font-family: 'Somar';
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 23px;
     line-height: 26px;
     color: #FFFFFF;
     display: flex;
@@ -938,9 +944,9 @@ h2 {
     align-items: center;
     float: left;
     margin-top: -42px;
-    left: -122px;
+    left: -66px;
     position: relative;
-    width: 189px;
+    width: 160px;
     text-align: center;
     transition: all 0.3s linear;
     -webkit-transition: all 0.3s linear;
@@ -989,7 +995,7 @@ h2 {
 
     .st-two {
         margin-left: 0;
-        right: -70px;
+        right: -87px;
     }
 
     .st-three {
@@ -1040,8 +1046,8 @@ h2 {
 
 .btn-ready {
     display: inline-block;
-    width: 234px;
-    padding: 14px 21px;
+    width: 200px;
+    padding: 10px 21px;
     background: linear-gradient(180deg, #FFCB3C 0%, #E7B836 100%);
     border: 2px solid #ECBB36;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1049,7 +1055,7 @@ h2 {
     font-family: 'Somar';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 30px;
     line-height: 43px;
     color: #FFFFFF;
     margin-top: 33px;
@@ -1121,7 +1127,7 @@ h2 {
     font-family: 'Somar';
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 36px;
     line-height: 48px;
     color: #263238;
     position: relative;
@@ -1200,24 +1206,23 @@ h2 {
 }
 
 .btn-why {
-    max-width: 286px;
+    max-width: 250px;
     background: linear-gradient(180deg, #2EAC6D 0%, #52EA9E 100%);
     border: 2px solid #2EAC6D;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
-    padding: 14px 21px;
+    padding: 10px 21px;
     font-family: 'Somar';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 29px;
     line-height: 43px;
     color: #FFFFFF;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    display: flex;
+   justify-content: center;
     position: relative;
     margin-top: 35px;
-    right: 50%;
+    right: 52%;
     transition: all 0.3s linear;
     -webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
@@ -1237,7 +1242,8 @@ h2 {
 
 @media (max-width :991px) {
     .btn-parent {
-        text-align: center;
+        display: flex;
+        justify-content: center;
     }
 
     .btn-why {
@@ -2132,6 +2138,10 @@ h2 {
     margin-top: 11px;
 }
 
+.li-special svg {
+    font-size: 22px;
+}
+
 .li-special {
     margin-top: 34px !important;
 }
@@ -2939,12 +2949,12 @@ input:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     padding: 14px 36px;
-    width: 307px;
+    width: 288px;
     text-align: center;
     font-family: 'Tajawal';
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 29px;
     line-height: 38px;
     color: #FFFFFF;
     margin-top: 30px;
@@ -3211,6 +3221,10 @@ input:focus {
     cursor: pointer;
 }
 
+.img-detail img {
+    width: 75%;
+}
+
 @media (max-width:991px) {
     .center {
         text-align: center;
@@ -3397,6 +3411,11 @@ input:focus {
     align-items: center;
 }
 
+.btn-nav-2 svg {
+    font-size: 17px;
+    margin-right: 20px;
+}
+
 .dropdown-nav {
     margin-top: 28px;
     margin-left: 86px;
@@ -3439,15 +3458,14 @@ input:focus {
 
 .item-nav img {
     margin-left: 10px;
+    width: 23px;
 }
 
 .marg-import {
     margin-top: 112px !important;
 }
 
-.btn-nav-2 svg {
-    margin-right: 30px;
-}
+
 
 .dropdown-toggle::after {
     display: none !important;
@@ -3540,7 +3558,7 @@ input:focus {
     font-family: 'Somarsemibold';
     font-style: normal;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 30px;
     line-height: 38px;
     color: #44494F;
     padding: 14px 20px;
@@ -4931,15 +4949,14 @@ input:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 14px 21px;
+    padding: 10px 21px;
     margin-right: 42px;
     font-family: 'Somar';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 30px;
     line-height: 43px;
     color: #FFFFFF;
     margin-left: 44px;
@@ -5000,11 +5017,11 @@ input:focus {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 14px 0px;
+    padding: 10px 0px;
     font-family: 'Tajawalbold';
     font-style: normal;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 34px;
     color: #FFFFFF;
     min-height: 34px;
@@ -5015,7 +5032,7 @@ input:focus {
     -moz-transition: all 0.3s linear;
     -ms-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
-    width: auto;
+    width: 220px;
 }
 
 .btn-need:hover {
@@ -6014,7 +6031,7 @@ input[type="checkbox"]:hover {
 }
 
 .btn-parent .hvr-sweep-to-right {
-    display: inline-block;
+    /* display: inline-block; */
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     position: relative;
