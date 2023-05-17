@@ -248,6 +248,29 @@ $(document).ready(function () {
             $box.prop("checked", false);
         }
     });
+    /* ===========================
+           toggle icon btn-nav-2 
+     =========================== */
+    const done = document.querySelectorAll('.btn-nav-2');
+    done.forEach(function (el) {
+        el.addEventListener('click', function () {
+
+            const b = el.children[1];
+            if (b.style.display === "block") {
+                b.style.display = "block";
+                $(this)
+                    .find('[data-fa-i2svg]')
+                    .toggleClass('fa-angle-down')
+                    .toggleClass('fa-angle-up');
+            } else {
+                b.style.display = "block";
+                $(this)
+                    .find('[data-fa-i2svg]')
+                    .toggleClass('fa-angle-down')
+                    .toggleClass('fa-angle-up');
+            }
+        });
+    });
 
     $(`.navbar-nav .nav-link[href="${hash}"]`).addClass('active');
 
@@ -321,3 +344,4 @@ function setContainerClass() {
 
 setContainerClass();
 window.addEventListener("resize", setContainerClass);
+
