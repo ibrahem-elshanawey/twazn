@@ -128,6 +128,8 @@ svg:hover {
     padding-right: 0px;
 }
 
+
+
 .nav-item a.nav-link {
     margin-top: 51px;
     margin-bottom: 31px;
@@ -138,10 +140,30 @@ svg:hover {
     font-family: 'Somar';
     font-style: normal;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 22px !important;
     line-height: 29px;
     color: #000000;
 
+}
+
+@-moz-document url-prefix() {
+    .nav-item a.nav-link {
+        margin-top: 51px;
+        margin-bottom: 31px;
+        margin-left: 30px;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        padding: 0px;
+        font-family: 'Somar';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px !important;
+        line-height: 29px;
+        color: #000000;
+
+    }
+
+    
 }
 
 .nav-item .nav-link.active {
@@ -2392,7 +2414,7 @@ h2 {
              register
    ============================= */
 #register {
-    margin-top: 117px;
+    margin-top: 112px;
 }
 
 .cont-regist {
