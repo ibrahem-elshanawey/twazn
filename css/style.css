@@ -163,7 +163,7 @@ svg:hover {
 
     }
 
-    
+
 }
 
 .nav-item .nav-link.active {
@@ -409,7 +409,7 @@ svg:hover {
 .bg-slide {
     background: linear-gradient(180deg, #2EAC6D 0%, rgba(255, 203, 60, 0.35) 50%), url("../img/Rectangle\ 8979.png") no-repeat;
     background-size: cover;
-    margin-top: 115px;
+    margin-top: 112px;
     position: relative;
 }
 
@@ -537,7 +537,7 @@ svg:hover {
     background-image: url("../img/Group\ 1000003769.png");
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 115px;
+    margin-top: 112px;
     position: relative;
 }
 
@@ -2537,6 +2537,28 @@ h2 {
     align-items: center;
 }
 
+select.inp-login {
+    padding-top: 0.78rem !important;
+    padding-bottom: 0.5rem !important;
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(28, 27, 31, 0.4);
+    background-repeat: no-repeat;
+    background-position: left 18px center;
+    background-size: 3%;
+}
+
+select.inp-login option:not(:first-child) {
+    font-size: 1.25rem;
+    color: #1C1B1F;
+}
+
+select:focus {
+    box-shadow: none !important;
+}
+
 .conent-pass {
     position: relative;
 }
@@ -4125,6 +4147,11 @@ input:focus {
     margin-bottom: 24px;
 }
 
+#myChart {
+    width: 393px !important;
+    height: 122px !important;
+}
+
 .progress {
     width: 110px;
     height: 110px;
@@ -4415,7 +4442,7 @@ input:focus {
     min-height: 100vh;
     background-color: white;
     position: relative;
-    width: 405px;
+    min-width: 405px;
 }
 
 .dashboard-2::before {
@@ -4578,7 +4605,7 @@ input:focus {
     min-height: 100vh;
     background-color: white;
     position: relative;
-    width: 405px;
+    min-width: 405px;
 }
 
 .controll-collect {
@@ -4748,8 +4775,10 @@ input:focus {
         background-position: 0%;
     }
 
-    .dashboard-4 {
+    .dashboard-4,
+    .dashboard-2 {
         width: 315px;
+        min-width: 0px;
     }
 
     .p-controll {
@@ -4805,7 +4834,7 @@ input:focus {
     font-family: 'Somar';
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 24px;
     text-decoration-line: underline;
     text-underline-position: under;
@@ -4839,7 +4868,7 @@ input:focus {
     font-family: 'Somar';
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 24px;
     text-decoration-line: underline;
     text-underline-position: under;
@@ -4851,7 +4880,7 @@ input:focus {
     margin-top: 55px;
 }
 
-.menu-scale li:not(:first-child) {
+.item-scale:not(:first-child) {
     margin-top: 16px;
 }
 
@@ -4859,9 +4888,10 @@ input:focus {
     font-family: 'Tajawal';
     font-style: normal;
     font-weight: 500;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 34px;
     color: #2F4046;
+    margin-bottom: 0px;
 }
 
 .inner {

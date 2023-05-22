@@ -41,13 +41,13 @@
                             <a class="nav-link" href="about.html">من نحن</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Weighscale.html">مقياس دوزنها</a>
+                            <a class="nav-link" href="questionaire-details.html">مقياس دوزنها</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="coah.html">كوتش دوزنها</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="blog.html">المدونة</a>
+                            <a class="nav-link" href="blogs.html">المدونة</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="contactus.html">تواصل معنا</a>
@@ -63,15 +63,15 @@
                                 حسابي <i class="fa-solid fa-chevron-down"></i>
                             </button>
                             <ul class="dropdown-menu special-drop">
-                                <li><a class="dropdown-item dropdown-item-nav" href="#"><span class="item-nav"><img
-                                                src="img/User.png" alt="">
+                                <li><a class="dropdown-item dropdown-item-nav" href="editprofile.html"><span
+                                            class="item-nav"><img src="img/User.png" alt="">
                                             تعديل بياناتي</span>
                                         <span><i class="fa-solid fa-chevron-left"></i></span></a></li>
-                                <li><a class="dropdown-item dropdown-item-nav" href="#"><span class="item-nav"><img
-                                                src="img/card.png" alt="">
+                                <li><a class="dropdown-item dropdown-item-nav" href="myquestionaire.html"><span
+                                            class="item-nav"><img src="img/card.png" alt="">
                                             طلباتي</span>
                                         <span><i class="fa-solid fa-chevron-left"></i></span></a></li>
-                                <li><a class="dropdown-item dropdown-item-nav" href="controlboard.html"><span
+                                <li><a class="dropdown-item dropdown-item-nav" href="dashboard.html"><span
                                             class="item-nav"><img src="img/mdi_file-chart.svg" alt=""> لوحه
                                             التحكم</span>
                                         <span><i class="fa-solid fa-chevron-left"></i></span></a></li>
@@ -113,12 +113,12 @@
             </div>
             <div class="dashboard-menu">
                 <ul>
-                    <li><a href="controlboard.html" class="dashboard-link"> <img src="img/category.svg" alt="category"
+                    <li><a href="dashboard.html" class="dashboard-link"> <img src="img/category.svg" alt="category"
                                 class="img-fluid"> لوحه التحكم</a></li>
-                    <li><a href="requesttwo.html" class="dashboard-link"> <img src="img/status-up.svg" alt="category"
-                                class="img-fluid spec-img"> مقاييسي</a></li>
-                    <li><a href="datamod.html" class="dashboard-link"> <img src="img/profile-2user.svg" alt="category"
-                                class="img-fluid"> تعديل البيانات</a></li>
+                    <li><a href="myquestionaire-empty.html" class="dashboard-link"> <img src="img/status-up.svg"
+                                alt="category" class="img-fluid spec-img"> مقاييسي</a></li>
+                    <li><a href="editprofile.html" class="dashboard-link"> <img src="img/profile-2user.svg"
+                                alt="category" class="img-fluid"> تعديل البيانات</a></li>
                     <li><a href="#" class="dashboard-link"> <img src="img/Group 1000003804.svg" alt="category"
                                 class="img-fluid"> تسجيل الخروج</a></li>
                 </ul>
@@ -184,7 +184,7 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-5">
-                                            <div class="progress blue">
+                                            <!-- <div class="progress blue">
                                                 <span class="progress-left">
                                                     <span class="progress-bar"></span>
                                                 </span>
@@ -192,7 +192,8 @@
                                                     <span class="progress-bar"></span>
                                                 </span>
                                                 <div class="progress-value">92%</div>
-                                            </div>
+                                            </div> -->
+                                            <canvas id="myChart"></canvas>
                                         </div>
                                     </div>
                                 </div>
@@ -318,9 +319,9 @@
                     <ul class="links-foot">
                         <li><a href="index.html">الرئيسية</a></li>
                         <li><a href="about.html">من نحن</a></li>
-                        <li><a href="Weighscale.html">مقياس دوزنها</a></li>
+                        <li><a href="questionaire-details.html">مقياس دوزنها</a></li>
                         <li><a href="coah.html">كوتش دوزنها</a></li>
-                        <li><a href="blog.html">المدونة </a></li>
+                        <li><a href="blogs.html">المدونة </a></li>
                         <li><a href="contactus.html">تواصل معنا</a></li>
                     </ul>
                 </div>
@@ -393,6 +394,8 @@
     <script src="js/jquery.js"></script>
     <!-- font-awsome js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <!-- chart js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js"></script>
     <!-- owl-carousel js -->
     <script src="js/owl-carousel/owl.carousel.min.js"></script>
     <!-- bootstrap js -->

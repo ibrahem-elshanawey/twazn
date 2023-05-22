@@ -2,6 +2,7 @@
 
 $(document).ready(function () {
 
+
     /*================================
                 self
     ==================================*/
@@ -274,74 +275,117 @@ $(document).ready(function () {
 
     $(`.navbar-nav .nav-link[href="${hash}"]`).addClass('active');
 
+
 });
-/* ===========================
-      video 
- =========================== */
-const play = document.getElementById('play');
-const video = document.getElementById('testvideo');
-const imag = document.getElementById('imag');
-play.addEventListener('click', function () {
-    if (video.paused) {
-        video.play()
+
+document.addEventListener('DOMContentLoaded', function () {
+    var ctx = document.getElementById("myChart").getContext('2d');
+    new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: [92, 8], // Specify the data values array
+                borderColor: ['#2EAC6D', 'rgba(46, 172, 109, 0.2)'], // Add custom color border 
+                backgroundColor: ['#2EAC6D', 'rgba(46, 172, 109, 0.2)'], // Add custom color background (Points and Fill)
+                borderWidth: 1 // Specify bar border width
+            }]
+        },
+        options: {
+            responsive: true, // Instruct chart js to respond nicely.
+            maintainAspectRatio: false, // Add to prevent default behaviour of full-width/height 
+          
+        },
+        plugins: [{
+            id: 'text',
+            beforeDraw: function(chart, a, b) {
+              var width = chart.width,
+                height = chart.height,
+                ctx = chart.ctx;
+        
+              ctx.restore();
+              var fontSize = (height / 114).toFixed(2);
+              ctx.font = fontSize + "em Nunito";
+              ctx.textBaseline = "center";
+              ctx.textColor="#2EAC6D";
+              var text = "92%",
+                textX = Math.round((width - ctx.measureText(text).width) / 2),
+                textY = height / 2;
+                ctx.fillStyle = '#2EAC6D';
+              ctx.fillText(text, textX, textY);
+              ctx.save();
+            }
+          }]
+    });
+});
+$(document).ready(function () {
+    /* ===========================
+          video 
+     =========================== */
+    const play = document.getElementById('play');
+    const video = document.getElementById('testvideo');
+    const imag = document.getElementById('imag');
+    play.addEventListener('click', function () {
+        if (video.paused) {
+            video.play()
+            play.style.display = 'none';
+            video.setAttribute("controls", "controls")
+
+
+        } else {
+
+        }
+
+    })
+    video.addEventListener('pause', function () {
+        play.style.display = 'block';
+        video.removeAttribute('controls');
+    })
+
+    video.addEventListener('play', function () {
         play.style.display = 'none';
-        video.setAttribute("controls", "controls")
+    })
+    var poster = document.querySelector('#testvideo').getAttribute('poster');
 
+    video.addEventListener('ended', function () {
+        video.style.display = 'none';
+        video.setAttribute('poster', poster);
+        video.load();
+        video.style.display = 'block';
+    });
 
-    } else {
+    /* ===========================
+          container 
+     =========================== */
+    var myDiv = document.getElementById('slide-self');
+    var dozen = document.getElementById('dozen');
+    var ready = document.getElementById('ready');
+    var why = document.getElementById('why');
+    var team = document.getElementById('team');
+    var say = document.getElementById('say');
+    var vido = document.getElementById('video');
 
+    function setContainerClass() {
+        if (window.matchMedia("(min-width: 1600px)").matches) {
+            myDiv.classList.add('container');
+            dozen.classList.add('container');
+            ready.classList.add('container');
+            why.classList.add('container');
+            team.classList.add('container');
+            say.classList.add('container');
+            vido.classList.add('container');
+        }
+        else {
+            myDiv.classList.remove('container');
+            dozen.classList.remove('container');
+            ready.classList.remove('container');
+            why.classList.remove('container');
+            team.classList.remove('container');
+            say.classList.remove('container');
+            vido.classList.remove('container');
+        }
     }
 
-})
-video.addEventListener('pause', function () {
-    play.style.display = 'block';
-    video.removeAttribute('controls');
-})
+    setContainerClass();
+    window.addEventListener("resize", setContainerClass);
 
-video.addEventListener('play', function () {
-    play.style.display = 'none';
-})
-var poster = document.querySelector('#testvideo').getAttribute('poster');
-
-video.addEventListener('ended', function () {
-    video.style.display = 'none';
-    video.setAttribute('poster', poster);
-    video.load();
-    video.style.display = 'block';
 });
-
-/* ===========================
-      container 
- =========================== */
-var myDiv = document.getElementById('slide-self');
-var dozen = document.getElementById('dozen');
-var ready = document.getElementById('ready');
-var why = document.getElementById('why');
-var team = document.getElementById('team');
-var say = document.getElementById('say');
-var vido = document.getElementById('video');
-
-function setContainerClass() {
-    if (window.matchMedia("(min-width: 1600px)").matches) {
-        myDiv.classList.add('container');
-        dozen.classList.add('container');
-        ready.classList.add('container');
-        why.classList.add('container');
-        team.classList.add('container');
-        say.classList.add('container');
-        vido.classList.add('container');
-    }
-    else {
-        myDiv.classList.remove('container');
-        dozen.classList.remove('container');
-        ready.classList.remove('container');
-        why.classList.remove('container');
-        team.classList.remove('container');
-        say.classList.remove('container');
-        vido.classList.remove('container');
-    }
-}
-
-setContainerClass();
-window.addEventListener("resize", setContainerClass);
-

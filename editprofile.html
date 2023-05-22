@@ -41,13 +41,13 @@
                             <a class="nav-link" href="about.html">من نحن</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Weighscale.html">مقياس دوزنها</a>
+                            <a class="nav-link" href="questionaire-details.html">مقياس دوزنها</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="coah.html">كوتش دوزنها</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="blog.html">المدونة</a>
+                            <a class="nav-link" href="blogs.html">المدونة</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="contactus.html">تواصل معنا</a>
@@ -57,18 +57,19 @@
                         <div class="dropdown dropdown-nav">
                             <button class="dropdown-toggle btn-nav-2" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                <img src="img/Ellipse 85.png" alt="" class="img-fluid img-nav">    اهلا Mohamed  <i class="fa-solid fa-chevron-down"></i>
+                                <img src="img/Ellipse 85.png" alt="" class="img-fluid img-nav"> اهلا Mohamed <i
+                                    class="fa-solid fa-chevron-down"></i>
                             </button>
                             <ul class="dropdown-menu special-drop">
-                                <li><a class="dropdown-item dropdown-item-nav" href="datamod.html"><span
+                                <li><a class="dropdown-item dropdown-item-nav" href="editprofile.html"><span
                                             class="item-nav"><img src="img/User.png" alt="">
                                             تعديل بياناتي</span>
                                         <span><i class="fa-solid fa-chevron-left"></i></span></a></li>
-                                <li><a class="dropdown-item dropdown-item-nav" href="requests.html"><span
+                                <li><a class="dropdown-item dropdown-item-nav" href="myquestionaire.html"><span
                                             class="item-nav"><img src="img/card.png" alt="">
                                             طلباتي</span>
                                         <span><i class="fa-solid fa-chevron-left"></i></span></a></li>
-                                <li><a class="dropdown-item dropdown-item-nav" href="controlboard.html"><span
+                                <li><a class="dropdown-item dropdown-item-nav" href="dashboard.html"><span
                                             class="item-nav"><img src="img/mdi_file-chart.svg" alt=""> لوحه
                                             التحكم</span>
                                         <span><i class="fa-solid fa-chevron-left"></i></span></a></li>
@@ -110,12 +111,12 @@
             </div>
             <div class="dashboard-menu">
                 <ul>
-                    <li><a href="controlboard.html" class="dashboard-link"> <img src="img/category.svg" alt="category"
+                    <li><a href="dashboard.html" class="dashboard-link"> <img src="img/category.svg" alt="category"
                                 class="img-fluid"> لوحه التحكم</a></li>
-                    <li><a href="requesttwo.html" class="dashboard-link"> <img src="img/status-up.svg" alt="category"
-                                class="img-fluid spec-img"> مقاييسي</a></li>
-                    <li><a href="datamod.html" class="dashboard-link"> <img src="img/profile-2user.svg" alt="category"
-                                class="img-fluid"> تعديل البيانات</a></li>
+                    <li><a href="myquestionaire-empty.html" class="dashboard-link"> <img src="img/status-up.svg"
+                                alt="category" class="img-fluid spec-img"> مقاييسي</a></li>
+                    <li><a href="editprofile.html" class="dashboard-link"> <img src="img/profile-2user.svg"
+                                alt="category" class="img-fluid"> تعديل البيانات</a></li>
                     <li><a href="#" class="dashboard-link"> <img src="img/Group 1000003804.svg" alt="category"
                                 class="img-fluid"> تسجيل الخروج</a></li>
                 </ul>
@@ -125,79 +126,104 @@
             <div class="container">
                 <div class="img-data">
                     <img src="img/Ellipse 86 (1).png" alt="" class="img-fluid">
-                    <img src="img/Frame 241.png" alt="" class="img-fluid img-frame">
+                    <img src="img/Frame 241.png" alt="" class="img-fluid img-frame" onclick="$('#profile-img').click()">
                     <p class="p-data">تغيير الصورة</p>
+                    <input type="file" hidden id="profile-img">
                 </div>
                 <div class="collect-data">
                     <h6 class="h-data">بيانات شخصية</h6>
                     <div class="row">
                         <div class="col-lg-12">
-                            <div class="">
-                                <div class="mb-1 mt-4">
-                                    <label for="username" class="form-label inp-label">اسم المستخدم</label>
-                                    <input type="text" class="form-control form-control-lg inp-login inpu-2"
-                                        id="username" placeholder="john.doe">
-                                </div>
-                                <div class="mb-1">
-                                    <label for="country" class="form-label inp-label"> الدولة</label>
-                                    <input type="text" class="form-control form-control-lg inp-login inpu-2"
-                                        id="country" placeholder="السعودية">
-                                </div>
-                                <div class="mb-1">
-                                    <label for="twon" class="form-label inp-label"> المدينة</label>
-                                    <input type="text" class="form-control form-control-lg inp-login inpu-2" id="twon"
-                                        placeholder="الرياض">
-                                </div>
-                                <div class="mb-1 conent-pass">
-                                    <label for="phonenumber" class="form-label inp-label"> رقم الجوال</label>
-                                    <input type="text" class="form-control form-control-lg inp-login pass "
-                                        id="phonenumber" placeholder="1203646325875">
-                                </div>
+                            <form action="">
+                                <div class="">
+                                    <div class="mb-1 mt-4">
+                                        <label for="username" class="form-label inp-label"> الاسم الاول</label>
+                                        <input type="text" class="form-control form-control-lg inp-login inpu-2"
+                                            id="username" placeholder="الاسم الاول">
+                                    </div>
+                                    <div class="mb-1">
+                                        <label for="username" class="form-label inp-label"> الاسم الاخير</label>
+                                        <input type="text" class="form-control form-control-lg inp-login inpu-2"
+                                            id="username" placeholder="الاسم الاخير">
+                                    </div>
+                                    <div class="mb-1">
+                                        <label for="username" class="form-label inp-label"> البريد الالكترونى</label>
+                                        <input type="email" class="form-control form-control-lg inp-login inpu-2"
+                                            id="username" placeholder="البريد الالكترونى ">
+                                    </div>
+                                    <div class="mb-1">
+                                        <label for="country" class="form-label inp-label"> الدولة</label>
+                                        <select class="form-select form-select-lg inp-login inpu-2" id="country"
+                                            value="">
+                                            <option value="1" selected disabled>الدولة</option>
+                                            <option value="2">السعودية</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-1">
+                                        <label for="twon" class="form-label inp-label"> المدينة</label>
+                                        <select class="form-select form-select-lg inp-login inpu-2" id="country"
+                                            value="">
+                                            <option value="1" selected disabled>المدينة</option>
+                                            <option value="2">الرياض</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-1 conent-pass">
+                                        <label for="phonenumber" class="form-label inp-label"> رقم الجوال</label>
+                                        <input type="text" class="form-control form-control-lg inp-login pass "
+                                            id="phonenumber" placeholder="1203646325875">
+                                    </div>
 
-                                <div class="parent-jender">
-                                    <p class="h-jender h-jender-data ">النوع</p>
-                                    <div class="cont-jender">
-                                        <div class="jender ">
-                                            <input type="checkbox" name="" id="">
-                                            <label class="male">ذكر</label>
+                                    <div class="parent-jender">
+                                        <p class="h-jender h-jender-data ">النوع</p>
+                                        <div class="cont-jender">
+                                            <div class="jender ">
+                                                <input type="checkbox" name="" id="">
+                                                <label class="male">ذكر</label>
+                                            </div>
+                                        </div>
+                                        <div class="cont-jender male">
+                                            <div class="jender">
+                                                <input type="checkbox" name="" id="">
+                                                <label class="">أنثى</label>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="cont-jender male">
-                                        <div class="jender">
-                                            <input type="checkbox" name="" id="">
-                                            <label class="">أنثى</label>
-                                        </div>
+                                    <div class="btn-parent mt-5">
+                                        <a href="#" class="btn-login hvr-sweep-to-right"> تحديث البيانات</a>
+                                    </div>
+                                    <h6 class="h-data-2">بيانات الحساب</h6>
+                                    <div class="mb-1 conent-pass">
+                                        <label for="password" class="form-label inp-label"> كلمة المرور القديمة</label>
+                                        <input type="password" class="form-control form-control-lg inp-login pass "
+                                            id="password" placeholder="•••••••••••••••••••••••••">
+                                        <button class="toggle-password">
+                                            <i class="fa-solid fa-eye-slash "></i>
+                                        </button>
+                                    </div>
+                                    <div class="mb-1 conent-pass">
+                                        <label for="passwordnew" class="form-label inp-label"> كلمة المرور
+                                            الجديدة</label>
+                                        <input type="password" class="form-control form-control-lg inp-login pass "
+                                            id="passwordnew" placeholder="•••••••••••••••••••••••••">
+                                        <button class="toggle-password-new">
+                                            <i class="fa-solid fa-eye-slash "></i>
+                                        </button>
+                                    </div>
+                                    <div class="mb-3 conent-pass">
+                                        <label for="confiarmpassword" class="form-label inp-label"> تأكيدكلمة
+                                            المرور</label>
+                                        <input type="password" class="form-control form-control-lg inp-login pass "
+                                            id="confiarmpassword" placeholder="•••••••••••••••••••••••••">
+                                        <button class="toggle-confiarmpassword">
+                                            <i class="fa-solid fa-eye-slash "></i>
+                                        </button>
+                                    </div>
+                                    <div class="btn-parent mt-5">
+                                        <a href="#" class="btn-login hvr-sweep-to-right"> تحديث كلمة المرور</a>
                                     </div>
                                 </div>
-                                <h6 class="h-data-2">بيانات الحساب</h6>
-                                <div class="mb-1 conent-pass">
-                                    <label for="password" class="form-label inp-label"> كلمة المرور القديمة</label>
-                                    <input type="password" class="form-control form-control-lg inp-login pass "
-                                        id="password" placeholder="•••••••••••••••••••••••••">
-                                    <button class="toggle-password">
-                                        <i class="fa-solid fa-eye-slash "></i>
-                                    </button>
-                                </div>
-                                <div class="mb-1 conent-pass">
-                                    <label for="passwordnew" class="form-label inp-label"> كلمة المرور الجديدة</label>
-                                    <input type="password" class="form-control form-control-lg inp-login pass "
-                                        id="passwordnew" placeholder="•••••••••••••••••••••••••">
-                                    <button class="toggle-password-new">
-                                        <i class="fa-solid fa-eye-slash "></i>
-                                    </button>
-                                </div>
-                                <div class="mb-3 conent-pass">
-                                    <label for="confiarmpassword" class="form-label inp-label"> تأكيدكلمة المرور</label>
-                                    <input type="password" class="form-control form-control-lg inp-login pass "
-                                        id="confiarmpassword" placeholder="•••••••••••••••••••••••••">
-                                    <button class="toggle-confiarmpassword">
-                                        <i class="fa-solid fa-eye-slash "></i>
-                                    </button>
-                                </div>
-                                <div class="btn-parent mt-5">
-                                    <a href="#" class="btn-login hvr-sweep-to-right"> تحديث البيانات</a>
-                                </div>
-                            </div>
+                            </form>
+
                         </div>
                     </div>
                 </div>
@@ -225,9 +251,9 @@
                     <ul class="links-foot">
                         <li><a href="index.html">الرئيسية</a></li>
                         <li><a href="about.html">من نحن</a></li>
-                        <li><a href="Weighscale.html">مقياس دوزنها</a></li>
+                        <li><a href="questionaire-details.html">مقياس دوزنها</a></li>
                         <li><a href="coah.html">كوتش دوزنها</a></li>
-                        <li><a href="blog.html">المدونة </a></li>
+                        <li><a href="blogs.html">المدونة </a></li>
                         <li><a href="contactus.html">تواصل معنا</a></li>
                     </ul>
                 </div>
