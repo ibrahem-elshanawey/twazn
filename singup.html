@@ -85,36 +85,40 @@
                             <p class="p-login mt-3">دعنا نساعدك جميعًا حتى تتمكن من الوصول إلى حسابك الشخصي في منصة
                                 توزان.
                             </p>
-                            <div class="mb-1 mt-4">
+                            <div class="row">
+                            <div class="mb-1 mt-4 col">
                                 <label for="firstname" class="form-label inp-label"> الاسم الاول</label>
                                 <input type="text" class="form-control form-control-lg inp-login inpu-2"
                                     id="firstname" placeholder="الاسم الاول">
                             </div>
-                            <div class="mb-1">
+                            <div class="mb-1 mt-4 col">
                                 <label for="lastname" class="form-label inp-label"> الاسم الاخير</label>
                                 <input type="text" class="form-control form-control-lg inp-login inpu-2"
                                     id="lastname" placeholder="الاسم الاخير">
+                            </div>
                             </div>
                             <div class="mb-1">
                                 <label for="emaile" class="form-label inp-label"> البريد الالكترونى</label>
                                 <input type="email" class="form-control form-control-lg inp-login inpu-2"
                                     id="emaile" placeholder="البريد الالكترونى ">
                             </div>
-                            <div class="mb-1">
+                            <div class="row">
+                            <div class="mb-1 col">
                                 <label for="country" class="form-label inp-label"> الدولة</label>
-                                <select class="form-select form-select-lg inp-login inpu-2" id="country"
+                                <select class="form-select form-select-lg inp-login inpu-2" 
                                     >
                                     <option value="1" selected disabled>الدولة</option>
                                     <option value="2">السعودية</option>
                                 </select>
                             </div>
-                            <div class="mb-1">
+                            <div class="mb-1 col">
                                 <label for="twon" class="form-label inp-label"> المدينة</label>
-                                <select class="form-select form-select-lg inp-login inpu-2" id="country"
+                                <select class="form-select form-select-lg inp-login inpu-2" 
                                     value="">
                                     <option value="1" selected disabled>المدينة</option>
                                     <option value="2">الرياض</option>
                                 </select>
+                            </div>
                             </div>
                             <div class="mb-1 conent-pass">
                                 <label for="phonenumber" class="form-label inp-label"> رقم الجوال</label>
@@ -125,7 +129,7 @@
                                 <label for="password" class="form-label inp-label"> كلمة المرور</label>
                                 <input type="password" class="form-control form-control-lg inp-login pass "
                                     id="password" placeholder="•••••••••••••••••••••••••">
-                                <button class="toggle-password">
+                                <button type="button" class="toggle-password">
                                     <i class="fa-solid fa-eye-slash "></i>
                                 </button>
                             </div>
@@ -133,7 +137,7 @@
                                 <label for="confiarmpassword" class="form-label inp-label"> تأكيدكلمة المرور</label>
                                 <input type="password" class="form-control form-control-lg inp-login pass "
                                     id="confiarmpassword" placeholder="•••••••••••••••••••••••••">
-                                <button class="toggle-confiarmpassword">
+                                <button type="button" class="toggle-confiarmpassword">
                                     <i class="fa-solid fa-eye-slash "></i>
                                 </button>
                             </div>
