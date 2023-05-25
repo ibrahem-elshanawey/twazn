@@ -239,10 +239,10 @@ $(document).ready(function () {
     /* ===========================
              checkbox 
        =========================== */
-    $("input:checkbox").on('click', function () {
+    $("input:radio").on('click', function () {
         var $box = $(this);
-        if ($box.is(":checked")) {
-            var group = "input:checkbox[name='" + $box.attr("name") + "']";
+        if ($box.is(":radio")) {
+            var group = "input:radio[name='" + $box.attr("name") + "']";
             $(group).prop("checked", false);
             $box.prop("checked", true);
         } else {

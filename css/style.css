@@ -1678,6 +1678,13 @@ h2 {
     font-size: 20px;
     line-height: 26px;
     color: #000000;
+    overflow: hidden;
+    height: 179px;
+    text-overflow: ellipsis;
+    padding-left: 21px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
 }
 
 .sp-say {
@@ -1707,6 +1714,7 @@ h2 {
         font-size: 14px;
         line-height: 17px;
         margin-bottom: 1px;
+        height: 145px;
     }
 
     .sp-say {
@@ -2623,7 +2631,7 @@ input:focus {
     -o-transition: all 0.3s linear;
 }
 
-.p-login-2:hover a {
+.p-login-2 a:hover {
     color: #FFCB3C;
 }
 
@@ -2681,12 +2689,12 @@ input:focus {
     -o-transform: rotate(-45deg);
 }
 
-.p-login-2 input[type="checkbox"]:checked {
+.p-login-2 input[type="radio"]:checked {
     background: #2EAC6D !important;
     border-color: #2EAC6D;
 }
 
-.p-login-2 input[type="checkbox"]:checked:after {
+.p-login-2 input[type="radio"]:checked:after {
     opacity: 1;
 }
 
@@ -2876,12 +2884,12 @@ input:focus {
     -o-transform: rotate(-45deg);
 }
 
-.jender input[type="checkbox"]:checked {
+.jender input[type="radio"]:checked {
     background: #2EAC6D !important;
     border-color: green;
 }
 
-.jender input[type="checkbox"]:checked:after {
+.jender input[type="radio"]:checked:after {
     opacity: 1;
 }
 
@@ -2933,12 +2941,12 @@ input:focus {
     -o-transform: rotate(-45deg);
 }
 
-.agree input[type="checkbox"]:checked {
+.agree input[type="radio"]:checked {
     background: #2EAC6D !important;
     border-color: #2EAC6D;
 }
 
-.agree input[type="checkbox"]:checked:after {
+.agree input[type="radio"]:checked:after {
     opacity: 1;
 }
 
@@ -5161,15 +5169,35 @@ input:focus {
     margin-top: 94px;
 }
 
-.scroll {
+/* .scroll {
     margin-top: 25px;
     margin-bottom: 30px;
     max-height: 350px;
     padding-left: 20px;
     overflow-y: auto;
     overflow-x: hidden;
+    width: 100%;
 }
-
+.scroll::-webkit-scrollbar {
+    height: 100px;
+   width: 10px;
+  
+}
+.scroll::-webkit-scrollbar-track {
+    max-height: 100px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    background-color: #3d3a3a;
+  }
+  .scroll::-webkit-scrollbar-thumb {
+    background-color: #888; /
+    border-radius: 5px; 
+    height: 50px; 
+    top: 25px;
+  }
 .sub-nav {
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.06);
     padding: 20px;
@@ -5178,7 +5206,7 @@ input:focus {
 
 .sub-nav-item {
     display: inline-block;
-}
+} */
 
 .name-questionaire {
     font-family: 'Somarsemibold';
@@ -5579,7 +5607,7 @@ input:focus {
     background-color: #2EAC6D;
 }
 
-input[type="checkbox"]:hover {
+input[type="radio"]:hover {
     cursor: pointer;
 }
 
@@ -5953,6 +5981,7 @@ input[type="checkbox"]:hover {
     line-height: 56px;
     color: #ffffff;
 }
+
 .cont-request-2 {
     min-height: 170px;
     background: linear-gradient(180deg, #16824C 0%, rgba(148, 228, 188, 0.51) 100%), url('../img/Rectangle\ 8977\ \(5\).png');
@@ -5960,10 +5989,36 @@ input[type="checkbox"]:hover {
     background-size: cover;
     background-position: center;
 }
+
 .error-sec {
     padding-bottom: 40px;
     padding-top: 112px;
 }
+
+/* start forget page */
+/* =============================
+             forgetpassword
+   ============================= */
+.h-forget {
+    font-family: 'Somar';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    color: #000000;
+    margin-bottom: 8px;
+    margin-top: 25%;
+}
+
+.p-forget {
+    font-family: 'Somarmedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+    color: #979797;
+}
+
 /* =============================
              animation
    ============================= */
