@@ -279,43 +279,157 @@ $(document).ready(function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    var ctx = document.getElementById("myChart").getContext('2d');
-    new Chart(ctx, {
-        type: 'doughnut',
-        data: {
-            datasets: [{
-                data: [92, 8], // Specify the data values array
-                borderColor: ['#2EAC6D', 'rgba(46, 172, 109, 0.2)'], // Add custom color border 
-                backgroundColor: ['#2EAC6D', 'rgba(46, 172, 109, 0.2)'], // Add custom color background (Points and Fill)
-                borderWidth: 1 // Specify bar border width
-            }]
-        },
-        options: {
-            responsive: true, // Instruct chart js to respond nicely.
-            maintainAspectRatio: false, // Add to prevent default behaviour of full-width/height 
-          
-        },
-        plugins: [{
-            id: 'text',
-            beforeDraw: function(chart, a, b) {
-              var width = chart.width,
-                height = chart.height,
-                ctx = chart.ctx;
-        
-              ctx.restore();
-              var fontSize = (height / 114).toFixed(2);
-              ctx.font = fontSize + "em Nunito";
-              ctx.textBaseline = "center";
-              ctx.textColor="#2EAC6D";
-              var text = "92%",
-                textX = Math.round((width - ctx.measureText(text).width) / 2),
-                textY = height / 2;
-                ctx.fillStyle = '#2EAC6D';
-              ctx.fillText(text, textX, textY);
-              ctx.save();
-            }
-          }]
+    // var ctx = document.getElementById("myChart").getContext('2d');
+    // new Chart(ctx, {
+    //     type: 'doughnut',
+    //     data: {
+    //         datasets: [{
+    //             data: [92, 8], // Specify the data values array
+    //             borderColor: ['#2EAC6D', 'rgba(46, 172, 109, 0.2)'], // Add custom color border 
+    //             backgroundColor: ['#2EAC6D', 'rgba(46, 172, 109, 0.2)'], // Add custom color background (Points and Fill)
+    //             borderWidth: 1 // Specify bar border width
+    //         }]
+    //     },
+    //     options: {
+    //         responsive: true, // Instruct chart js to respond nicely.
+    //         maintainAspectRatio: false, // Add to prevent default behaviour of full-width/height 
+
+    //     },
+    //     plugins: [{
+    //         id: 'text',
+    //         beforeDraw: function(chart, a, b) {
+    //           var width = chart.width,
+    //             height = chart.height,
+    //             ctx = chart.ctx;
+
+    //           ctx.restore();
+    //           var fontSize = (height / 114).toFixed(2);
+    //           ctx.font = fontSize + "em Nunito";
+    //           ctx.textBaseline = "center";
+    //           ctx.textColor="#2EAC6D";
+    //           var text = "92%",
+    //             textX = Math.round((width - ctx.measureText(text).width) / 2),
+    //             textY = height / 2;
+    //             ctx.fillStyle = '#2EAC6D';
+    //           ctx.fillText(text, textX, textY);
+    //           ctx.save();
+    //         }
+    //       }]
+    // });
+    var width = 120,
+        height = 120;
+
+    var outerRadius = width / 2;
+    var innerRadius = 40;
+
+    var data = [92];
+    var pie = d3.pie().value(function (d) {
+        return d;
     });
+
+    var endAng = function (d) {
+        return (d / 100) * Math.PI * 2;
+    };
+
+    var bgArc = d3.arc()
+        .innerRadius(innerRadius)
+        .outerRadius(outerRadius)
+        .startAngle(0)
+        .endAngle(Math.PI * 2);
+
+    var dataArc = d3.arc()
+        .innerRadius(innerRadius)
+        .outerRadius(outerRadius)
+        .cornerRadius(15)
+        .startAngle(0);
+
+    var svg = d3
+        .select('.chart-area')
+        .append("svg")
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        // .attr("viewBox", "0 0 100 100")
+        // .attr("class", "shadow")
+        .classed("svg-content", true);
+
+    var path = svg
+        .selectAll("g")
+        .data(pie(data))
+        .enter()
+        .append("g")
+        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+    var colorScale = d3.scaleLinear()
+        .domain([0, 79, 80, 100])
+        .range(["#F2B5AA", "#F2B5AA", "rgba(46, 172, 109, 0.2)", "rgba(46, 172, 109, 0.2)"]);
+    path
+        .append("path")
+        .attr("d", bgArc)
+        .style("stroke-width", 5)
+        .attr("fill", function (d) { return colorScale(data); });
+    var colorScale2 = d3.scaleLinear()
+        .domain([0, 79, 80, 100])
+        .range(["#E66D57", "#E66D57", "#2EAC6D", "#2EAC6D"]);
+    path
+        .append("path")
+        .attr("fill", function (d) { return colorScale2(data); })
+        .transition()
+        .ease(d3.easeCubicInOut)
+        .duration(750)
+        .attrTween("d", arcTween);
+
+    path
+        .append("text")
+        .attr("fill", "#fff")
+        .attr("font-size", "22px")
+        .attr("font-family", "Nunito")
+        .attr("tex-anchor", "middle")
+        .attr("x", function (d) {
+            if (d.data === 100) {
+                return 8; // adjust x value for 100%
+            }
+            else if (d.data < 10) {
+                return 0;
+            }
+            else {
+                return 8; // default x value
+            }
+        })
+        .attr("y", 8)
+        .transition()
+        .ease(d3.easeCubicInOut)
+        .duration(750)
+        .attr("fill", function (d) { return colorScale2(data); })
+        .text(data);
+
+    path.append("text")
+        .attr("fill", "#fff")
+        .attr("class", "ratingtext")
+        .attr("font-size", "22px")
+        .attr("font-family", "Nunito")
+        .attr("tex-anchor", "middle")
+        .attr("x", function (d) {
+            if (d.data === 100) {
+                return 27; // adjust x value for 100%
+            }
+            else if (d.data < 10) {
+                return 20;
+            } else {
+                return 29; // default x value
+            }
+        })
+        .attr("y", 8)
+        .text('%')
+        .transition()
+        .ease(d3.easeCubicInOut)
+        .duration(750)
+        .attr("fill", function (d) { return colorScale2(data); });
+
+    function arcTween(d) {
+        var interpolate = d3.interpolate(d.startAngle, endAng(d.data));
+        return function (t) {
+            d.endAngle = interpolate(t);
+            return dataArc(d);
+        };
+    }
 });
 $(document).ready(function () {
     /* ===========================
