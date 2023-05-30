@@ -125,10 +125,10 @@
         <div class="parent-data-2">
             <div class="container">
                 <div class="img-data">
-                    <img src="img/Ellipse 86 (1).png" alt="" class="img-fluid">
-                    <img src="img/Frame 241.png" alt="" class="img-fluid img-frame" onclick="$('#profile-img').click()">
+                    <img src="img/Ellipse 86 (1).png" alt="" class="" id="image-preview">
+                    <img src="img/Frame 241.png" alt="" class="img-fluid img-frame" id="edit-button">
                     <p class="p-data">تغيير الصورة</p>
-                    <input type="file" hidden id="profile-img">
+                    <input type="file" hidden  id="image-input" accept="image/*" accept="image/*" onchange="previewImage(event)">
                 </div>
                 <div class="collect-data">
                     <h6 class="h-data">بيانات شخصية</h6>

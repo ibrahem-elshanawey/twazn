@@ -404,6 +404,7 @@ svg:hover {
 .photo img {
     max-height: 546px;
     max-width: 400px;
+    margin-left: 20px;
 }
 
 .bg-slide {
@@ -4536,11 +4537,20 @@ input:focus {
     margin-top: 30px;
     text-align: center;
 }
-
+#image-preview {
+    width: 197px;
+    height: 197px;
+    border: 1px solid #FFCB3C;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
 .img-frame {
     position: absolute;
-    bottom: 13px;
-    margin-right: -55px;
+    bottom: 15px;
+    margin-right: -57px;
 }
 
 .p-data {

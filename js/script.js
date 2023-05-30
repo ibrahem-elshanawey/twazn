@@ -430,6 +430,7 @@ document.addEventListener('DOMContentLoaded', function () {
             return dataArc(d);
         };
     }
+    
 });
 $(document).ready(function () {
     /* ===========================
@@ -503,3 +504,18 @@ $(document).ready(function () {
     window.addEventListener("resize", setContainerClass);
 
 });
+function previewImage(event) {
+    const file = event.target.files[0];
+    const reader = new FileReader();
+    reader.onload = function() {
+      const imagePreview = document.getElementById("image-preview");
+      imagePreview.src = reader.result;
+    }
+    reader.readAsDataURL(file);
+  }
+  
+  const editLabel = document.getElementById("edit-button");
+  editLabel.addEventListener("click", function() {
+    const imageInput = document.getElementById("image-input");
+    imageInput.click();
+  });
