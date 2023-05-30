@@ -3439,6 +3439,14 @@ input:focus {
    ============================= */
 .img-nav {
     margin-left: 10px;
+    height: 52px;
+    width: 52px;
+    border: 1px solid #FFCB3C;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .menu-nav {
@@ -3914,7 +3922,16 @@ input:focus {
     align-items: center;
     padding-top: 80px;
 }
-
+.img-profile {
+    height: 73px;
+    width: 73px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 1px solid #FFCB3C;
+}
 .p-profile {
     font-family: 'Somarmedium';
     font-style: normal;
@@ -4537,6 +4554,7 @@ input:focus {
     margin-top: 30px;
     text-align: center;
 }
+
 #image-preview {
     width: 197px;
     height: 197px;
@@ -4547,6 +4565,7 @@ input:focus {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
+
 .img-frame {
     position: absolute;
     bottom: 15px;
