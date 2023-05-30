@@ -3845,6 +3845,8 @@ input:focus {
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+    border: none;
+    width: 100%;
 }
 
 @media(max-width:430px) {
