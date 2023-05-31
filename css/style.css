@@ -248,7 +248,8 @@ svg:hover {
 }
 
 #slide-self {
-    min-height: 100%;
+    min-height: 690px;
+    position: relative;
 }
 
 .slide-1 {
@@ -612,10 +613,7 @@ svg:hover {
     transform: rotate(90deg);
     left: -6px;
     top: 374px;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
+    min-width: 207px;
 }
 
 @media (max-width:690px) {
@@ -654,7 +652,6 @@ svg:hover {
     right: 220px;
     top: 27px;
     border: 3px solid #2EAC6D;
-
 }
 
 #slide-self .owl-dots::after {
@@ -665,7 +662,6 @@ svg:hover {
     left: 205px;
     top: 27px;
     border: 3px solid #2EAC6D;
-
 }
 
 /* =============================
@@ -1207,6 +1203,8 @@ h2 {
     margin-left: auto;
     margin-right: auto;
 }
+
+
 
 .p-why {
     font-family: 'Tajawal';
@@ -1801,6 +1799,7 @@ h2 {
     -moz-transition: all 0.3s linear;
     -ms-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
+    height: 576px;
 }
 
 @media (max-width:991px) {
@@ -1830,6 +1829,8 @@ h2 {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    text-align: center;
+    height: 234px;
 }
 
 .img-card img {
@@ -3924,6 +3925,7 @@ input:focus {
     align-items: center;
     padding-top: 80px;
 }
+
 .img-profile {
     height: 73px;
     width: 73px;
@@ -3934,6 +3936,7 @@ input:focus {
     -o-border-radius: 50%;
     border: 1px solid #FFCB3C;
 }
+
 .p-profile {
     font-family: 'Somarmedium';
     font-style: normal;
