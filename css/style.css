@@ -2692,12 +2692,12 @@ input:focus {
     -o-transform: rotate(-45deg);
 }
 
-.p-login-2 input[type="radio"]:checked {
+.p-login-2 input[type="checkbox"]:checked {
     background: #2EAC6D !important;
     border-color: #2EAC6D;
 }
 
-.p-login-2 input[type="radio"]:checked:after {
+.p-login-2 input[type="checkbox"]:checked:after {
     opacity: 1;
 }
 
@@ -2944,12 +2944,12 @@ input:focus {
     -o-transform: rotate(-45deg);
 }
 
-.agree input[type="radio"]:checked {
+.agree input[type="checkbox"]:checked {
     background: #2EAC6D !important;
     border-color: #2EAC6D;
 }
 
-.agree input[type="radio"]:checked:after {
+.agree input[type="checkbox"]:checked:after {
     opacity: 1;
 }
 
