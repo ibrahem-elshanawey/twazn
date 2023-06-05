@@ -777,6 +777,8 @@ svg:hover {
     }
 }
 
+
+
 @media (max-width:441px) {
     .head-doz {
         width: auto;
@@ -975,6 +977,12 @@ h2 {
     }
 }
 
+@media (max-width:991px) {
+    .btn-doz-2 {
+        margin-top: 20px;
+    }
+}
+
 .btn-doz-2:hover {
     cursor: pointer;
     border: 3px solid #ECBB36;
@@ -1155,6 +1163,28 @@ h2 {
     border: 4px solid #FFCB3C;
     bottom: -10px;
     margin-right: 35px;
+}
+
+@media (max-width:531px) {
+    .header h6 {
+        font-size: 25px;
+    }
+
+    .header h6::before {
+        width: 200px;
+
+    }
+}
+
+@media (max-width:390px) {
+    .header h6 {
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    .header h6::before {
+        width: 190px;
+
+    }
 }
 
 .header h6 span {
@@ -1830,7 +1860,7 @@ h2 {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     text-align: center;
-    height: 234px;
+
 }
 
 .img-card img {
@@ -1839,6 +1869,7 @@ h2 {
     -moz-transition: all 0.3s linear;
     -ms-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
+    height: 234px;
 }
 
 .card:hover .img-card img {
@@ -4185,8 +4216,12 @@ input:focus {
 }
 
 .chart-area {
-    width: 110px;
-    height: 100px;
+    height: 130px;
+    text-align: center;
+}
+
+.chart-area svg {
+    width: 120px;
 }
 
 .progress {
