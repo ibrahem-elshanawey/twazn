@@ -61,7 +61,7 @@
 ==================================*/
 body {
     direction: rtl;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     margin: 0px;
     padding: 0px;
 }
@@ -120,6 +120,7 @@ svg:hover {
 @media(max-width:991px) {
     .navbar-collapse {
         overflow: auto;
+        height: 70vh;
     }
 }
 
@@ -406,6 +407,12 @@ svg:hover {
     max-height: 546px;
     max-width: 400px;
     margin-left: 20px;
+}
+
+@media (max-width:380px) {
+    .photo img {
+        max-width: 267px;
+    }
 }
 
 .bg-slide {
@@ -1030,6 +1037,34 @@ h2 {
     }
 }
 
+@media (max-width:365px) {
+
+    .st-one .grop-st,
+    .st-two .grop-st,
+    .st-three .grop-st {
+        display: none;
+    }
+
+    .st-one {
+        margin-right: 30px;
+    }
+
+    .st-two {
+        right: 0px;
+        float: none;
+        margin-right: 30px;
+    }
+
+    .st-three {
+        margin-right: 30px;
+        margin-top: 20px;
+    }
+
+    .btn-doz {
+        font-size: 16px;
+    }
+}
+
 /* =============================
               ready
    ============================= */
@@ -1295,6 +1330,21 @@ h2 {
 
     .btn-why {
         right: auto;
+    }
+}
+
+@media (max-width:365px) {
+    .header h6 {
+        font-size: 17px;
+        padding-top: 9px;
+    }
+
+    .btn-header {
+        font-size: 14px;
+    }
+
+    .header h6::before {
+        width: 130px;
     }
 }
 
@@ -1739,7 +1789,7 @@ h2 {
         font-size: 14px;
         line-height: 17px;
         margin-bottom: 1px;
-        height: 145px;
+        height: 140px;
     }
 
     .sp-say {
@@ -1762,6 +1812,41 @@ h2 {
 
 #say-about .owl-nav button:hover {
     color: #2EAC6D;
+}
+
+@media (max-width:365px) {
+    .p-say-1 {
+        font-size: 12px;
+        margin-bottom: -3px;
+    }
+
+    .sp-say {
+        font-size: 13px;
+        margin-bottom: 4px;
+    }
+
+    .p-say-2 {
+        font-size: 12px;
+
+    }
+}
+
+@media (max-width:290px) {
+    .p-say-1 {
+        font-size: 10px;
+        margin-bottom: -3px;
+        height: 107px;
+    }
+
+    .sp-say {
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+
+    .p-say-2 {
+        font-size: 11px;
+
+    }
 }
 
 /* =============================
@@ -1984,6 +2069,12 @@ h2 {
 
 .card .card-link:hover {
     color: #ffffff;
+}
+
+@media (max-width:365px) {
+    .cont-new .horizontal-head h6 {
+        font-size: 35px;
+    }
 }
 
 /* =============================
@@ -2473,6 +2564,24 @@ h2 {
     }
 }
 
+@media (max-width:365px) {
+    .links-foot-2 a {
+        font-size: 17px;
+    }
+
+    .link-spec {
+        margin-left: 14px;
+    }
+}
+
+@media (max-width: 290px) {
+
+    .collect-links::before,
+    .collect-links::after {
+        width: 20%;
+    }
+}
+
 /*start login page */
 /* =============================
              register
@@ -2868,6 +2977,17 @@ input:focus {
     }
 }
 
+@media (max-width:389px) {
+    .btn-google {
+        font-size: 17px;
+        padding: 10px 10px;
+    }
+
+    .btn-google img {
+        margin-left: 20px;
+    }
+}
+
 /* start singup page */
 /* =============================
              singup
@@ -3110,6 +3230,12 @@ input:focus {
     border: 2px solid #ECBB36;
 }
 
+@media (max-width:300px) {
+    .btn-coach {
+        font-size: 27px;
+    }
+}
+
 /* start blog page */
 /* =============================
              blog
@@ -3245,6 +3371,12 @@ input:focus {
 
     .pag-spec-1 {
         margin-right: -9px;
+    }
+}
+
+@media (max-width:388px) {
+    .pagination {
+        flex-wrap: wrap;
     }
 }
 
@@ -3534,6 +3666,12 @@ input:focus {
     margin-top: 28px;
     margin-left: 86px;
     margin-bottom: 27px;
+}
+
+@media (max-width:991px) {
+    .dropdown-nav {
+        margin-left: 0px;
+    }
 }
 
 .special-drop {
@@ -4528,6 +4666,34 @@ input:focus {
     margin-top: 35px;
 }
 
+@media (max-width:340px) {
+
+    .btn-sut {
+        font-size: 18px;
+        padding: 10px 10px;
+    }
+
+    .btn-sut img {
+        margin-right: 8px;
+    }
+
+    .sp-request {
+        font-size: 12px;
+    }
+
+    .dashboard-menu li .dashboard-link {
+        font-size: 15px;
+    }
+
+    .dashboard::before {
+        display: none;
+    }
+
+    .profile .p-profile-1 {
+        font-size: 10px;
+    }
+}
+
 /* start page requesttwo */
 /* =============================
              requesttwo
@@ -4691,6 +4857,55 @@ input:focus {
         padding-left: 0px;
         padding-right: 0px;
         margin-left: 0px;
+    }
+}
+
+@media (max-width:389px) {
+    #image-preview {
+        width: 100px;
+        height: 100px;
+    }
+
+    .img-frame {
+        bottom: 21px;
+        margin-right: -35px;
+        width: 30px;
+    }
+
+    .p-profile-1 {
+        font-size: 12px;
+    }
+
+    .dashboard-menu .dashboard-link {
+        font-size: 20px;
+    }
+
+    .dashboard-3 {
+        min-width: 0px;
+        width: 240px !important;
+    }
+
+    .parent-jender {
+        margin-right: 10px;
+    }
+
+    .male {
+        margin-right: 18%;
+    }
+
+    .btn-login {
+        padding: 10px 5px;
+        font-size: 15px;
+    }
+
+    .dashboard-2::before {
+        margin-left: 7px;
+    }
+}
+
+@media (max-width:300px) {
+    .inp-label {
+        font-size: 11px;
     }
 }
 
@@ -5255,6 +5470,32 @@ input:focus {
 
     .inner {
         padding-left: 0px;
+    }
+}
+
+@media (max-width: 340px) {
+    .p-scale-4 {
+        padding-right: 20px;
+        font-size: 20px;
+    }
+
+    .menu-scale-inner {
+        padding-right: 20px;
+    }
+
+    .item-scale-2 {
+        font-size: 20px;
+    }
+
+    .btn-scale {
+        font-size: 22px;
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width:290px) {
+    .h-scale {
+        font-size: 33px;
     }
 }
 
