@@ -696,7 +696,7 @@ svg:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -70%);
+    -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
@@ -1404,6 +1404,17 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.team-member img {
+    width: 169px;
+    height: 169px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 1px solid #FFCB3C;
 }
 
 .team-member {
