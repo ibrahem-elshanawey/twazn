@@ -2176,6 +2176,8 @@ h2 {
     -o-transition: all 0.3s linear;
     margin-right: auto;
     margin-left: auto;
+    height: 128px;
+    width: 128px;
 }
 
 .client:hover img {
@@ -4592,7 +4594,7 @@ input:focus {
 }
 
 .btn-sut {
-    padding: 14px 21px;
+    padding: 14px 15px;
     border: 2px solid #2EAC6D;
     border-radius: 20px;
     font-family: 'Somar';
@@ -4606,10 +4608,14 @@ input:focus {
     justify-content: center;
 }
 
-.btn-sut img {
-    margin-right: 34px;
+.choose-down {
+    display: flex;
+    align-items: end;
+    margin-bottom: 0px;
 }
-
+.choose-down svg {
+    color: #2EAC6D;
+}
 .spec-sutable {
     margin-top: 40px;
 }
