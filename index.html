@@ -751,7 +751,8 @@
                 <a href="#">
                   <i class="fa-solid fa-phone"></i> <span class="sp-footer-1">تواصل
                     معنا <br><span class="sp-footer-2">1 202-918-2132+</span></span>
-                </a></li>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -820,6 +821,182 @@
   <!-- wow js -->
   <script src="js/wow/wow.js"></script>
   <!-- script js -->
+  <script>
+    /*================================
+                self
+    ==================================*/
+    $(function () {
+      $("#slide-self").owlCarousel({
+        rtl: true,
+        items: 1,
+        loop: true,
+        autoplay: true,
+        smartSpeed: 2000,
+        autoplayHoverPause: true,
+        nav: true,
+        dots: true,
+        animateOut: 'bounceOutUp',
+        animateIn: 'bounceInUp',
+      });
+    });
+    /*================================
+                say
+    ==================================*/
+    $(function () {
+      $("#say-about").owlCarousel({
+        rtl: true,
+        items: 1,
+        loop: true,
+        autoplay: true,
+        smartSpeed: 2000,
+        autoplayHoverPause: true,
+        nav: true,
+        dots: false,
+        slideBy: 1,
+        navText: [
+          '<i class="fa-solid fa-arrow-right"></i>',
+          '<i class="fa-solid fa-arrow-left"></i>'
+        ]
+      });
+    })
+    /* ===========================
+             team 
+       =========================== */
+    $(function () {
+      $("#team-members").owlCarousel({
+        rtl: true,
+        loop: true,
+        autoplay: true,
+        smartSpeed: 2000,
+        autoplayHoverPause: true,
+        nav: true,
+        dots: false,
+        navText: [
+          '<i class="fa-solid fa-arrow-right"></i>',
+          '<i class="fa-solid fa-arrow-left"></i>'
+        ],
+        responsive: {
+
+          0: {
+            items: 1
+          },
+          480: {
+            items: 3
+          },
+          992: {
+            items: 5
+          }
+        }
+      });
+    });
+    /* ===========================
+             partener 
+       =========================== */
+    $(function () {
+      $("#partener-list").owlCarousel({
+        rtl: true,
+        loop: true,
+        autoplay: true,
+        smartSpeed: 2000,
+        autoplayHoverPause: true,
+        nav: true,
+        navText: [
+          '<i class="fa-solid fa-chevron-right"></i>',
+          '<i class="fa-solid fa-chevron-left"></i>'
+        ],
+        dots: false,
+        responsive: {
+
+          0: {
+            items: 2
+          },
+          480: {
+            items: 3
+          },
+          992: {
+            items: 5
+          }
+        }
+      });
+    });
+    /* ===========================
+             stats 
+       =========================== */
+    $(function () {
+      $('.counter').counterUp({
+        delay: 10,
+        time: 2000
+      });
+    });
+    /* ===========================
+          video 
+     =========================== */
+    const play = document.getElementById('play');
+    const video = document.getElementById('testvideo');
+    const imag = document.getElementById('imag');
+    play.addEventListener('click', function () {
+      if (video.paused) {
+        video.play()
+        play.style.display = 'none';
+        video.setAttribute("controls", "controls")
+
+
+      } else {
+
+      }
+
+    })
+    video.addEventListener('pause', function () {
+      play.style.display = 'block';
+      video.removeAttribute('controls');
+    })
+
+    video.addEventListener('play', function () {
+      play.style.display = 'none';
+    })
+    var poster = document.querySelector('#testvideo').getAttribute('poster');
+
+    video.addEventListener('ended', function () {
+      video.style.display = 'none';
+      video.setAttribute('poster', poster);
+      video.load();
+      video.style.display = 'block';
+    });
+    /* ===========================
+              container 
+         =========================== */
+    var myDiv = document.getElementById('slide-self');
+    var dozen = document.getElementById('dozen');
+    var ready = document.getElementById('ready');
+    var why = document.getElementById('why');
+    var team = document.getElementById('team');
+    var say = document.getElementById('say');
+    var vido = document.getElementById('video');
+
+    function setContainerClass() {
+      if (window.matchMedia("(min-width: 1600px)").matches) {
+        myDiv.classList.add('container');
+        dozen.classList.add('container');
+        ready.classList.add('container');
+        why.classList.add('container');
+        team.classList.add('container');
+        say.classList.add('container');
+        vido.classList.add('container');
+      }
+      else {
+        myDiv.classList.remove('container');
+        dozen.classList.remove('container');
+        ready.classList.remove('container');
+        why.classList.remove('container');
+        team.classList.remove('container');
+        say.classList.remove('container');
+        vido.classList.remove('container');
+      }
+    }
+
+    setContainerClass();
+    window.addEventListener("resize", setContainerClass);
+  </script>
   <script src="js/script.js"></script>
 </body>
 
