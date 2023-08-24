@@ -4613,9 +4613,11 @@ input:focus {
     align-items: end;
     margin-bottom: 0px;
 }
+
 .choose-down svg {
     color: #2EAC6D;
 }
+
 .spec-sutable {
     margin-top: 40px;
 }
@@ -6372,6 +6374,26 @@ input[type="radio"]:hover {
     font-size: 28px;
     line-height: 34px;
     color: #979797;
+}
+
+/*-----------terms and conditions-----------*/
+/*==============================
+       termsandconditions  
+  ==============================*/
+.p-condition {
+    color: #000;
+    font-family: "Somar";
+    font-size: 28px;
+    line-height: 40px;
+    text-align: justify;
+}
+
+.p-condition-2 {
+    color: #000;
+    font-family: "Somarreg";
+    font-size: 25px;
+    line-height: 35px;
+    text-align: justify;
 }
 
 /* =============================
